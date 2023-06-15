@@ -642,7 +642,7 @@ img {
 .subscribe-btn:focus {
   background: var(--pressed-state);
 }
-.subscribe-case {
+.footer-subscribe-form {
   display: flex;
 }
 .subscribe-btn-case {
