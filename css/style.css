@@ -558,6 +558,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-right: 80px;
 }
 .footer-soc-item {
   display: block;
@@ -589,6 +590,73 @@ img {
 }
 .footer-soc-link:focus {
   background-color: var(--success);
+}
+.footer-subscribe {
+}
+.subscribe-title {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-subscribe-input {
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 24px;
+}
+.footer-subscribe-input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
+}
+.subscribe-btn {
+  display: flex;
+  width: 165px;
+  height: 40px;
+  padding: 8px 64px 8px 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: var(--primary-band);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background: var(--pressed-state);
+}
+.subscribe-case {
+  display: flex;
+}
+.subscribe-btn-case {
+  position: relative;
+}
+.subscribe-btn-icon {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #ffffff;
 }
 
 /**----------modal-----------**/
@@ -766,6 +834,11 @@ img {
   color: var(--white-background);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.btn-submit:hover,
+.btn-submit:focus {
+  background: var(--pressed-state);
+}
+
 /**-----------P A G E    2---------------**/
 
 /**--------section potfolio menu--------**/
