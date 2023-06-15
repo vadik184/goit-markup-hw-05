@@ -825,7 +825,7 @@ img {
 
 .btn-submit {
   display: block;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   margin: 0 auto;
   background: var(--primary-band);
@@ -880,13 +880,18 @@ img {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-checkbox:checked + .form-checkbox span {
   background-color: var(--pressed-state);
+  border: none;
 }
-.checkbox-icon {
-  fill: #ffffff;
+.input-checkbox:checked + .form-checkbox svg {
+  fill: var(--light);
 }
+
 /**-----------P A G E    2---------------**/
 
 /**--------section potfolio menu--------**/
