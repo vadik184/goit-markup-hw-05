@@ -646,6 +646,9 @@ img {
   display: flex;
   gap: 24px;
 }
+.footer-subscribe-form {
+  gap: 24px;
+}
 
 .subscribe-btn-icon {
   fill: #ffffff;
