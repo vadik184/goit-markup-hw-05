@@ -657,6 +657,10 @@ img {
   margin-left: 16px;
 }
 
+.form-sudscribe-case {
+  display: flex;
+  gap: 24px;
+}
 /**----------modal-----------**/
 
 .backdrop {
