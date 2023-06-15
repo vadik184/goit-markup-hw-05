@@ -11,6 +11,7 @@
   --hero-background: grey;
   --white-background: #ffffff;
   --modal-background: #fcfcfc;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**-----------P A G E    1----------------**/
@@ -612,6 +613,7 @@ img {
   border-radius: 4px;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -654,7 +656,7 @@ img {
 .modal-btn:focus .modal-btn-icon {
   fill: #ffffff;
 }
-.modal-text {
+.modal-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -663,23 +665,51 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
-  padding: 72px 24px 0 24px;
   margin-bottom: 16px;
+  max-width: 360px;
 }
+/**
 .modal-form {
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 16px;
-}
+}**/
 .form-input {
   width: 100%;
   height: 40px;
-  margin-bottom: 8px;
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  padding-left: 34px;
+  outline: transparent;
+  transition: border var(--transition);
 }
+.modal-field {
+  margin-bottom: 8px;
+}
+.input-wrap {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  fill: var(--dark);
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill var(--transition);
+}
+
 .form-input:hover {
-  border-color: 1px solid var(--pressed-state);
+  border: 1px solid var(--pressed-state);
+}
+.form-input:hover + .input-icon {
+  fill: var(--pressed-state);
+}
+.form-input:focus {
+  border: 1px solid var(--pressed-state);
+}
+.form-input:focus + .input-icon {
+  fill: var(--pressed-state);
 }
 .form-label {
   font-family: "Roboto";
@@ -698,60 +728,25 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: transparent;
+  transition: border var(--transition);
+  resize: none;
 }
-.form-container-textarea {
-  display: ;
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border: 1px solid var(--pressed-state);
 }
+
 .modal-textarea {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  padding: 8px 16px;
 }
-.modal-textarea::placeholder {
-  padding-top: 8px;
-  padding-left: 16px;
-}
-.form-input-name {
-  display: block;
-  position: relative;
-}
-.form-input-phone {
-  display: block;
-  position: relative;
-}
-.form-input-email {
-  display: block;
-  position: relative;
-}
-.form-input-name .input-icon {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 19px;
-  margin-top: 14px;
-  fill: var(--dark);
-}
-.form-input-phone .input-icon {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 19px;
-  margin-top: 14px;
-  fill: var(--dark);
-}
-.form-input-email .input-icon {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 19px;
-  margin-top: 14px;
-  fill: var(--dark);
-}
+
 .btn-submit {
   display: block;
   width: 169px;
