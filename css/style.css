@@ -889,9 +889,6 @@ img {
   border: none;
   fill: var(--light);
 }
-/**.input-checkbox:checked + .form-checkbox svg {
-  fill: var(--light);
-}**/
 
 /**-----------P A G E    2---------------**/
 
