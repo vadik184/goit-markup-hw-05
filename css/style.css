@@ -608,7 +608,6 @@ img {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 24px;
 }
 .footer-subscribe-input::placeholder {
   font-family: "Roboto";
@@ -622,10 +621,11 @@ img {
   padding-left: 16px;
 }
 .subscribe-btn {
-  display: flex;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  padding: 8px 64px 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -633,7 +633,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  background: var(--primary-band);
+  background-color: var(--primary-band);
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -642,18 +642,14 @@ img {
 .subscribe-btn:focus {
   background: var(--pressed-state);
 }
-.footer-subscribe-form {
+.form-sudscribe-case {
   display: flex;
+  gap: 24px;
 }
-.subscribe-btn-case {
-  position: relative;
-}
+
 .subscribe-btn-icon {
-  position: absolute;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 /**----------modal-----------**/
